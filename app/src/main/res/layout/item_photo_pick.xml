@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <me.qiwu.colorqq.widget.SquareImageView
+        android:id="@+id/photo_pick_pre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/item_photo_gif"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_alignBottom="@id/photo_pick_pre"
+        android:layout_alignLeft="@id/photo_pick_pre"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/item_photo_check"
+        android:layout_alignBottom="@id/photo_pick_pre"
+        android:layout_alignRight="@id/photo_pick_pre"
+        android:layout_margin="5dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"/>
+</RelativeLayout>

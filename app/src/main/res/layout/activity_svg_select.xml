@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/base_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <me.qiwu.colorqq.widget.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        app:title_text="选择图标"
+        app:is_show_exit="true"/>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/svg_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <me.qiwu.colorqq.widget.FlexLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:id="@+id/svg_gridView"
+            android:numColumns="3"
+            android:overScrollMode="never"
+            android:verticalSpacing="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </me.qiwu.colorqq.widget.FlexLayout>
+</LinearLayout>

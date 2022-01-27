@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/base_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <me.qiwu.colorqq.widget.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="主题设置"/>
+    <me.qiwu.colorqq.widget.FlexLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <me.qiwu.colorqq.widget.HeaderPreference
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:header_color="?attr/colorAccent"
+                    app:header="基础设置"/>
+                <me.qiwu.colorqq.widget.SwitchPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:key="theme_stop"
+                    app:title="停用主题"
+                    app:switch_color="?attr/colorAccent"
+                    app:summary="停用主题功能"/>
+                <me.qiwu.colorqq.widget.SwitchPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:key="theme_black_status_bar"
+                    app:title="使用黑色状态栏"
+                    app:switch_color="?attr/colorAccent" />
+
+
+                <me.qiwu.colorqq.widget.HeaderPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:header="其他"
+                    app:header_color="?attr/colorAccent"
+                    android:layout_marginTop="@dimen/default_margin"/>
+                <me.qiwu.colorqq.widget.SwitchPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:key="theme_default_bubble"
+                    app:switch_color="?attr/colorAccent"
+                    app:title="强制使用默认气泡"/>
+                <me.qiwu.colorqq.widget.SwitchPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:switch_color="?attr/colorAccent"
+                    app:key="theme_default_font"
+                    app:title="强制使用默认字体"/>
+                <me.qiwu.colorqq.widget.SwitchPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:switch_color="?attr/colorAccent"
+                    app:key="theme_default_pendant"
+                    app:title="强制使用默认挂件"/>
+
+                <me.qiwu.colorqq.widget.HeaderPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:header="说明"
+                    app:header_color="?attr/colorAccent"
+                    android:layout_marginTop="@dimen/default_margin"/>
+                <me.qiwu.colorqq.widget.ArrowItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:arrow_title="主题特殊图标"
+                    app:arrow_show_ic="false"
+                    app:arrow_summary="skin_header_bar_bg.9.png 顶栏背景&#x000A;skin_color_title_immersive_bar.xml 主题色&#x000A;skin_setting_background.png 设置背景"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+        </ScrollView>
+    </me.qiwu.colorqq.widget.FlexLayout>
+</LinearLayout>

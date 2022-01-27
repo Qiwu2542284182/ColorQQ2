@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/black_round_bg"
+    android:fromDegrees="45.0"
+    android:pivotX="0%"
+    android:pivotY="100%" />

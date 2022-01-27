@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/switch_switch"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:kswThumbHeight="16dp"
+        app:kswThumbWidth="16dp"
+        app:kswThumbRangeRatio="2.2"/>
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_toLeftOf="@id/switch_switch"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/switch_title"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:textColor="#262626"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/switch_summary"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#a4a9ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

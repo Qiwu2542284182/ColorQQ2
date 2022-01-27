@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/base_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <me.qiwu.colorqq.widget.TitleBar
+            android:id="@+id/fab_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            app:title_text="@string/fab_button_setting"
+            app:is_show_exit="true"/>
+        <include
+            android:id="@+id/fab_botton_layout"
+            android:visibility="gone"
+            layout="@layout/layout_fab_button_setting_tip"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/default_margin"
+            android:id="@+id/fab_botton_recycler"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <me.qiwu.colorqq.library.FloatingActionButton.FloatingActionButton
+        android:id="@+id/music_drawer_setting_save"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_save_white"
+        android:onClick="save"
+        app:fab_colorNormal="#000"
+        app:rippleColor="#ee000000"
+        app:fab_colorPressed="#ee000000" />
+</FrameLayout>

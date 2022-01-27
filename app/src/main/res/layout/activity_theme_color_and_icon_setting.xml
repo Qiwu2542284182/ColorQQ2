@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.fragment.app.FragmentTabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/base_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <me.qiwu.colorqq.widget.TitleBar
+            android:id="@+id/theme_icon_text_titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            app:is_show_driver="false"/>
+        <FrameLayout
+            android:layout_below="@id/theme_icon_text_titleBar"
+            android:layout_above="@android:id/tabs"
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"/>
+    </RelativeLayout>
+</androidx.fragment.app.FragmentTabHost>

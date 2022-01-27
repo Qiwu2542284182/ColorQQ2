@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/base_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:background="@color/base_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <RelativeLayout
+        android:id="@+id/theme_bg_tip"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_toLeftOf="@id/theme_bg_setting_exit"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:text="若选择图片后QQ或模块闪退，表示选择的图太大了，请压缩后重新选择"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/theme_bg_setting_exit"
+            android:text="✕"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <me.qiwu.colorqq.widget.FlexLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_water"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+                    <ImageView
+                        android:layout_margin="5dp"
+                        android:id="@+id/theme_bg_splash"
+                        android:scaleType="centerCrop"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="启动背景"
+                            android:maxLines="1"
+                            android:textSize="15sp"
+                            android:textColor="#000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:text="assets/splash.jpg"
+                            android:maxLines="2"
+                            android:textSize="13sp"
+                            android:textColor="#000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#44aaaaaa"/>
+
+                <LinearLayout
+                    android:background="@drawable/bg_water"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+                    <ImageView
+                        android:layout_margin="5dp"
+                        android:id="@+id/theme_bg_drawer"
+                        android:scaleType="centerCrop"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="侧滑背景"
+                            android:maxLines="1"
+                            android:textSize="15sp"
+                            android:textColor="#000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:text="drawable-xhdpi/qq_setting_me_bg.png"
+                            android:maxLines="2"
+                            android:textSize="13sp"
+                            android:textColor="#000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#44aaaaaa"/>
+
+                <LinearLayout
+                    android:background="@drawable/bg_water"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+                    <ImageView
+                        android:layout_margin="5dp"
+                        android:id="@+id/theme_bg_main"
+                        android:scaleType="centerCrop"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="主界面/群助手背景"
+                            android:maxLines="1"
+                            android:textSize="15sp"
+                            android:textColor="#000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:text="drawable-xhdpi/skin_background_theme_version2.png"
+                            android:maxLines="2"
+                            android:textSize="13sp"
+                            android:textColor="#000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#44aaaaaa"/>
+
+                <LinearLayout
+                    android:background="@drawable/bg_water"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+                    <ImageView
+                        android:layout_margin="5dp"
+                        android:id="@+id/theme_bg_chat"
+                        android:scaleType="centerCrop"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="聊天背景"
+                            android:maxLines="1"
+                            android:textSize="15sp"
+                            android:textColor="#000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:text="drawable-xhdpi/skin_chat_background.png"
+                            android:maxLines="2"
+                            android:textSize="13sp"
+                            android:textColor="#000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#44aaaaaa"/>
+
+                <LinearLayout
+                    android:background="@drawable/bg_water"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+                    <ImageView
+                        android:layout_margin="5dp"
+                        android:id="@+id/theme_bg_setting"
+                        android:scaleType="centerCrop"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="设置背景"
+                            android:maxLines="1"
+                            android:textSize="15sp"
+                            android:textColor="#000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:text="drawable-xhdpi/skin_setting_background.png"
+                            android:maxLines="2"
+                            android:textSize="13sp"
+                            android:textColor="#000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#44aaaaaa"/>
+            </LinearLayout>
+        </ScrollView>
+    </me.qiwu.colorqq.widget.FlexLayout>
+
+</LinearLayout>

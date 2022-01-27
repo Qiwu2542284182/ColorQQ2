@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#4286F3</color>
+    <color name="colorAccent_press">#664286F3</color>
+    <color name="title_bar_bg_color">#ffffff</color>
+    <color name="base_bg_color">#f6f6f6</color>
+    <color name="title_color">#000</color>
+    <color name="title_summary">#ff888a8c</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="dividerColor">#757575</color>
+    <color name="dividerColor2">#b5b5b5</color>
+    <color name="greyLight">#e5e5e5</color>
+    <color name="grey">#aaaaaa</color>
+</resources>

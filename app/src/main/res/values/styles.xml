@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="selectableItemBackground">@drawable/bg_water</item>
+    </style>
+
+
+    <style name="theme" parent="AppTheme">
+        <item name="colorAccent">#949cff</item>
+    </style>
+
+
+    <style name="module" parent="AppTheme">
+        <item name="colorAccent">#72dea9</item>
+    </style>
+
+    <style name="fab" parent="AppTheme">
+        <item name="colorAccent">#ffd09a</item>
+    </style>
+
+    <style name="tab" parent="AppTheme">
+        <item name="colorAccent">#5d6c97</item>
+    </style>
+
+    <style name="top" parent="AppTheme">
+        <item name="colorAccent">#778cc4</item>
+    </style>
+
+    <style name="drawer" parent="AppTheme">
+        <item name="colorAccent">#40a1ff</item>
+    </style>
+
+    <style name="chat" parent="AppTheme">
+        <item name="colorAccent">#ff5f75</item>
+    </style>
+
+
+</resources>

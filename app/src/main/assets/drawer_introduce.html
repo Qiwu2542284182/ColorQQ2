@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>教程</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+body {
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+a {
+    background: transparent;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+img {
+    border: 0;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+pre {
+    overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+input {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+html input[disabled] {
+    cursor: default;
+}
+
+input {
+    line-height: normal;
+}
+
+input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+.codehilitetable {
+    border: 0;
+    border-spacing: 0;
+}
+
+.codehilitetable tr {
+    border: 0;
+}
+
+.codehilitetable pre,
+.codehilitetable div.codehilite {
+    margin: 0;
+}
+
+.linenos,
+.code,
+.codehilitetable td {
+    border: 0;
+    padding: 0;
+}
+
+td:not(.linenos) .linenodiv {
+    padding: 0 !important;
+}
+
+.code {
+    width: 100%;
+}
+
+.linenos div pre,
+.linenodiv pre,
+.linenodiv {
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.code div pre,
+.code div {
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input {
+    font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI
+
+Symbol";
+    line-height: 1.4;
+}
+
+a {
+    color: #4183c4;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+}
+
+hr {
+    height: 0;
+    margin: 15px 0;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+hr:before,
+hr:after {
+    display: table;
+    content: " ";
+}
+
+hr:after {
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 11px;
+}
+
+blockquote {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ol ol,
+ul ol {
+    list-style-type: lower-roman;
+}
+
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+    list-style-type: lower-alpha;
+}
+
+dd {
+    margin-left: 0;
+}
+
+code,
+pre,
+samp {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 12px;
+}
+
+pre {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+kbd {
+    background-color: #e7e7e7;
+    background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+    background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+    background-image: linear-gradient(#fefefe, #e7e7e7);
+    background-repeat: repeat-x;
+    border-radius: 2px;
+    border: 1px solid #cfcfcf;
+    color: #000;
+    padding: 3px 5px;
+    line-height: 10px;
+    font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    display: inline-block;
+}
+
+>*:first-child {
+    margin-top: 0 !important;
+}
+
+>*:last-child {
+    margin-bottom: 0 !important;
+}
+
+.headeranchor-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    padding-right: 6px;
+    padding-left: 30px;
+    margin-left: -30px;
+}
+
+.headeranchor-link:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 0.2em;
+    margin-bottom: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+h1 .headeranchor,
+h2 .headeranchor,
+h3 .headeranchor,
+h4 .headeranchor,
+h5 .headeranchor,
+h6 .headeranchor {
+    display: none;
+    color: #000;
+    vertical-align: middle;
+}
+
+h1:hover .headeranchor-link,
+h2:hover .headeranchor-link,
+h3:hover .headeranchor-link,
+h4:hover .headeranchor-link,
+h5:hover .headeranchor-link,
+h6:hover .headeranchor-link {
+    height: 1em;
+    padding-left: 8px;
+    margin-left: -30px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+h1:hover .headeranchor-link .headeranchor,
+h2:hover .headeranchor-link .headeranchor,
+h3:hover .headeranchor-link .headeranchor,
+h4:hover .headeranchor-link .headeranchor,
+h5:hover .headeranchor-link .headeranchor,
+h6:hover .headeranchor-link .headeranchor {
+    display: inline-block;
+}
+
+h1 {
+    padding-bottom: 0.3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+
+h2 {
+    padding-bottom: 0.3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 1em;
+    color: #777;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre,
+.admonition {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+hr {
+    height: 4px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+}
+
+ul,
+ol {
+    padding-left: 2em;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li>p {
+    margin-top: 16px;
+}
+
+dl {
+    padding: 0;
+}
+
+dl dt {
+    padding: 0;
+    margin-top: 16px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+dl dd {
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+blockquote {
+    padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
+}
+
+blockquote>:first-child {
+    margin-top: 0;
+}
+
+blockquote>:last-child {
+    margin-bottom: 0;
+}
+
+table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+}
+
+table th {
+    font-weight: bold;
+}
+
+table th,
+table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+}
+
+table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+img {
+    max-width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+code,
+samp {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 3px;
+}
+
+code:before,
+code:after {
+    letter-spacing: -0.2em;
+}
+
+
+pre[language]::before {
+    content: attr(language);
+    position: absolute;
+    top: 0;
+    right: 5px;
+    padding: 2px 1px;
+    text-transform: uppercase;
+    color: #666;
+    font-size: 8.5px;
+}
+
+pre:not([language]) {
+    padding: 6px 10px;
+}
+
+code {
+    padding: 5px 5px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    white-space: pre-wrap;
+    border-radius: 4px;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    word-wrap: break-word;
+}
+
+pre code {
+    padding: 0;
+    white-wrap: pre-wrap;
+    white-space: pre;
+    background-color: transparent;
+    border-radius: 0;
+    position: relative;
+    line-height: 1.45;
+}
+
+pre {
+    display: block;
+    padding: 14px 10px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #f6f8fa;
+    border: 0;
+    border-radius: 3px;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    overflow: auto;
+    position: relative;
+}
+
+.task-list-item {
+	list-style-type: none
+}
+
+.task-list-item label {
+	font-weight: 400
+}
+
+.task-list-item.enabled label {
+	cursor: pointer
+}
+
+.task-list-item+.task-list-item {
+	margin-top: 3px
+}
+
+.task-list-item .handle {
+	display: none
+}
+
+.task-list-item-checkbox {
+	margin: 0 1em 0.25em -1.6em;
+	vertical-align: middle
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    color: #4d4d4c;
+    padding: 0.5em;
+}
+
+.hljs-type {
+    color: #f5871f;
+}
+
+.hljs-params {
+    color: #f5871f;
+}
+
+.hljs-string {
+    color: #718c00;
+}
+
+.hljs-number {
+    color: #f5871f;
+}
+
+.hljs-selector-id {
+    color: #c82829;
+}
+
+.hljs-selector-class {
+    color: #c82829;
+}
+
+.hljs-comment {
+    color: #8e908c;
+}
+
+.hljs-quote {
+    color: #8e908c;
+}
+
+.hljs-template-tag {
+    color: #880000;
+}
+
+.hljs-tag {
+    color: #c82829;
+}
+
+.hljs-name {
+    color: #c82829;
+}
+
+.hljs-deletion {
+    color: #c82829;
+}
+
+.hljs-title {
+    color: #4271ae;
+    font-weight: bold;
+}
+
+.hljs-section {
+    color: #4271ae;
+    font-weight: bold;
+}
+
+.hljs-regexp {
+    color: #c82829;
+}
+
+.hljs-symbol {
+    color: #718c00;
+}
+
+.hljs-variable {
+    color: #c82829;
+}
+
+.hljs-template-variable {
+    color: #c82829;
+}
+
+.hljs-link {
+    color: #f5871f;
+}
+
+.hljs-attribute {
+    color: #eab700;
+}
+
+.hljs-selector-attr {
+    color: #BC6060;
+}
+
+.hljs-selector-pseudo {
+    color: #BC6060;
+}
+
+.hljs-literal {
+    color: #f5871f;
+}
+
+.hljs-built_in {
+    color: #f5871f;
+}
+
+.hljs-builtin-name {
+    color: #f5871f;
+}
+
+.hljs-bullet {
+    color: #718c00;
+}
+
+.hljs-code {
+    color: #397300;
+}
+
+.hljs-addition {
+    color: #718c00;
+}
+
+.hljs-meta {
+    color: #f5871f;
+}
+
+.hljs-meta-string {
+    color: #4d99bf;
+}
+
+.hljs-keyword {
+    color: #8959a8;
+}
+
+.hljs-selector-tag {
+    color: #8959a8;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
+</style>
+    <base href='file:///storage/emulated/0/我的笔记/'/>
+    <script defer src='file:///android_asset/anchor.js' type='text/javascript'></script>
+    <script defer src='file:///android_asset/highlight.js' type='text/javascript'></script>
+    <script defer src='file:///android_asset/highlight-init.js' type='text/javascript'></script>
+</head>
+<body>
+<h2	id="按钮属性说明">按钮属性说明</h2/>
+<h3	id="背景图标名称">背景图标名称</h3/>
+<p>图标的文件名，所有按钮图标都必须保存在 <code>内部储存/QQColor2/vip/music/icons</code> 里才能生效</p>
+<p>例如：  文件为:内部储存/QQColor2/vip/music/icons/ic_exit.png，属性值应填ic_exit.png</p>
+<h3	id="点击事件">点击事件</h3/>
+<p>固定事件:</p>
+<table>
+    <thead>
+    <tr>
+        <th>名称</th>
+        <th>功能</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>qzone</td>
+        <td>QQ空间</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>wallet</td>
+        <td>QQ钱包</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>fav</td>
+        <td>我的收藏</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>photo</td>
+        <td>我的相册</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>qlink</td>
+        <td>面对面快传</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>search</td>
+        <td>搜索</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>money</td>
+        <td>收付款</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>message</td>
+        <td>消息</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>contact</td>
+        <td>联系人</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>readInjoy</td>
+        <td>看点</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>leba</td>
+        <td>动态</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>exit</td>
+        <td>退出QQ</td>
+    </tr>
+    </tbody>
+</table>
+<p>自定义事件：</p>
+<table>
+    <thead>
+    <tr>
+        <th>名称</th>
+        <th>说明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>jump_ + 活动名</td>
+        <td>跳转到指定活动</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>url_ + 网址</td>
+        <td>跳转到指定网址</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>frined_ + 好友QQ号</td>
+        <td>跳转到指定QQ好友聊天界面</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>app_ + 应用包名</td>
+        <td>打开指定应用</td>
+    </tr>
+    </tbody>
+</table>
+<p>自定义事件举例:</p>
+<table>
+    <thead>
+    <tr>
+        <th>举例</th>
+        <th>说明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>jump_com.tencent.<br>mobileqq.activity.<br>QQSettingSettingActivity</td>
+        <td>跳转到QQ设置页面</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>url_http://www.baidu.com</td>
+        <td>打开百度</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>friend_123456</td>
+        <td>打开与QQ号为123456<br>的聊天界面</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>app_me.qiwu.colorqq2</td>
+        <td>打开ColorQQ模块</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

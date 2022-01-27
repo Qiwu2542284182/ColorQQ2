@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/base_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <me.qiwu.colorqq.widget.TitleBar
+            android:id="@+id/theme_manage_titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            app:is_show_exit="true"
+            app:title_text="主题管理"/>
+        <RelativeLayout
+            android:id="@+id/theme_manage_tip_layout"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_toLeftOf="@id/theme_manage_exit"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:text="长按导入的主题将删除主题，长按默认主题编辑默认主题，点击切换主题；卸载模块后，所有导入主题将会丢失。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/theme_manage_exit"
+                android:text="✕"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <me.qiwu.colorqq.widget.FlexLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/theme_manage_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </me.qiwu.colorqq.widget.FlexLayout>
+    </LinearLayout>
+    <me.qiwu.colorqq.library.FloatingActionButton.FloatingActionButton
+        android:id="@+id/theme_manage_add"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_add_white"
+        android:onClick="add"
+        app:fab_colorNormal="#000"
+        app:fab_colorPressed="#66000000" />
+
+</FrameLayout>

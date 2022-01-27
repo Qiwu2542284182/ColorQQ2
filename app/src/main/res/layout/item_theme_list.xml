@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_toLeftOf="@id/theme_list_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/theme_list_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/theme_list_author"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/tertiary_text_dark"
+                    android:textStyle="italic|bold"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/theme_list_version"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="italic|bold"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/theme_list_QQVersion"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/tertiary_text_dark"
+                    android:textStyle="italic|bold"
+                    android:maxLines="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <me.qiwu.colorqq.widget.ThemeSwitch
+                android:focusable="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/theme_list_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:kswThumbHeight="16dp"
+                app:kswThumbWidth="16dp"
+                app:kswThumbRangeRatio="2.2"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/theme_list_description"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/base_bg_color"/>
+</LinearLayout>

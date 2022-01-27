@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/base_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <me.qiwu.colorqq.widget.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        app:title_text="@string/top_setting"
+        app:is_show_exit="true"/>
+    <me.qiwu.colorqq.widget.FlexLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <me.qiwu.colorqq.widget.HeaderPreference
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:header_color="?attr/colorAccent"
+                    app:header="基础设置"/>
+                <me.qiwu.colorqq.widget.SwitchPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="替换左上角图标为菜单按钮"
+                    app:switch_color="?attr/colorAccent"
+                    app:key="top_useMenu"
+                    app:summary="菜单按钮图标保存在：内部储存/QQColor2/top/ic_menu.png"/>
+                <me.qiwu.colorqq.widget.SwitchPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="替换右上角图标为搜索按钮"
+                    app:switch_color="?attr/colorAccent"
+                    app:key="top_useSearch"
+                    app:summary="搜索按钮图标保存在：内部储存/QQColor2/top/ic_search.png"/>
+                <me.qiwu.colorqq.widget.SwitchPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:switch_color="?attr/colorAccent"
+                    app:title="隐藏主界面搜索框"
+                    app:key="top_hideSearch" />
+
+                <me.qiwu.colorqq.widget.HeaderPreference
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:header="启用图标着色"/>
+                <me.qiwu.colorqq.widget.SwitchPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:switch_color="?attr/colorAccent"
+                    app:title="图标着色"
+                    app:key="top_tint"
+                    app:summary="顶栏替换的图标着色"/>
+                <me.qiwu.colorqq.widget.ColorPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:color_default_color="@color/white"
+                    app:color_text="图标着色"
+                    app:color_use_alpha="false"
+                    app:color_key="top_tint_color"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </me.qiwu.colorqq.widget.FlexLayout>
+</LinearLayout>

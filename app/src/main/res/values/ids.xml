@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fab_label" type="id"/>
+    <item name="tag_fab_onClick" type="id"/>
+    <item name="tag_fab_icName" type="id"/>
+
+    <item name="tag_file_type" type="id"/>
+    <item name="tag_file_name" type="id"/>
+
+    <item name="tag_theme_icon_name" type="id"/>
+    <item name="tag_theme_icon_view" type="id"/>
+    <item name="tag_theme_color_name" type="id"/>
+    <item name="tag_theme_color_value" type="id"/>
+    <item name="tag_theme_color_view" type="id"/>
+
+    <item name="tag_qq_drawer" type="id"/>
+
+</resources>

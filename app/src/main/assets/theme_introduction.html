@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>主题结构</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+body {
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+li p {
+    overflow: visible
+}
+
+a {
+    color: #3194d0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3194d0;
+    text-decoration: underline
+}
+
+a.active,a:active,a:focus {
+    color: #3194d0
+}
+
+a.disabled,a.disabled.active,a.disabled:active,a.disabled:focus,a.disabled:hover,a[disabled],a[disabled].active,a[disabled]:active,a[disabled]:focus,a[disabled]:hover {
+    cursor: not-allowed;
+    color: #f5f5f5
+}
+
+ol,p,ul {
+    word-break: break-word!important;
+    word-break: break-all
+}
+
+hr {
+    clear: both;
+    margin: 15px 0;
+    height: 0px;
+    overflow: hidden;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #2f2f2f;
+    line-height: 1.7;
+    text-rendering: optimizelegibility
+}
+
+h1 {
+    font-size: 26px
+}
+
+h2 {
+    font-size: 24px
+}
+
+h3 {
+    font-size: 22px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+img {
+    max-width: 100%
+}
+
+blockquote {
+    border: 0;
+    margin: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    background-color: #f7f7f7;
+    border-left: 6px solid #b4b4b4;
+    word-break: break-word!important;
+    word-break: break-all;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px
+}
+
+blockquote p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7
+}
+
+blockquote .image-package {
+    width: auto;
+    margin-left: 0
+}
+
+ol,ul {
+    padding: 0;
+    margin: -5px 0 20px 20px
+}
+
+ol li,ul li {
+    line-height: 30px
+}
+
+ol li ol,ol li ul,ul li ol,ul li ul {
+    margin-top: 15px
+}
+
+ol .image-package,ul .image-package {
+    width: auto!important;
+    margin-left: 0!important
+}
+
+pre {
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 13px;
+    word-wrap: normal;
+    word-break: break-word!important;
+    word-break: break-all;
+    white-space: pre;
+    overflow: auto;
+    border-radius: 4px
+}
+
+pre code {
+    padding: 0;
+    background-color: transparent;
+    white-space: pre
+}
+
+code {
+    padding: 2px 4px;
+    background-color: #f6f6f6;
+    border: none;
+    font-size: 12px;
+    white-space: pre-wrap
+}
+
+table {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-left: none;
+    word-break: normal
+}
+
+table tr:nth-of-type(2n) {
+    background-color: hsla(0,0%,71%,.1)
+}
+
+table thead th {
+    vertical-align: middle;
+    text-align: inherit
+}
+
+table td,table th {
+    padding: 8px;
+    border: 1px solid #ddd;
+    line-height: 20px;
+    vertical-align: middle
+}
+
+table th {
+    font-weight: 700
+}
+
+table .image-package {
+    width: auto;
+    margin-left: 0
+}
+
+.task-list-item {
+	list-style-type: none
+}
+
+.task-list-item label {
+	font-weight: 400
+}
+
+.task-list-item.enabled label {
+	cursor: pointer
+}
+
+.task-list-item+.task-list-item {
+	margin-top: 3px
+}
+
+.task-list-item .handle {
+	display: none
+}
+
+.task-list-item-checkbox {
+	margin: 0 1em 0.25em -1.6em;
+	vertical-align: middle
+}
+
+/*
+ * atom-one-light.css
+ */
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #383a42;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #a0a1a7;
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #a626a4;
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e45649;
+}
+
+.hljs-literal {
+  color: #0184bb;
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+  color: #50a14f;
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: #c18401;
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #986801;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #4078f2;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+</style>
+<base href='file:///storage/emulated/0/我的笔记/'/>
+<script defer src='file:///android_asset/anchor.js' type='text/javascript'></script>
+<script defer src='file:///android_asset/highlight.js' type='text/javascript'></script>
+<script defer src='file:///android_asset/highlight-init.js' type='text/javascript'></script>
+</head>
+<body>
+<!-- From: M Note -->
+<!-- Author: HJQ -->
+<!-- email: 880634@qq.com --><h3	id="主题zip结构">主题zip结构</h3/>
+<ul>
+<li>
+<p>主题包zip</p>
+<ul>
+<li>
+<p>assets(assets里的图片，主要为启动图)</p>
+</li>
+<li>
+<p>color(颜色)</p>
+</li>
+<li>
+<p>drawable-xhdpi(图标)</p>
+</li>
+<li>
+<p>layout(布局)</p>
+</li>
+<li>
+<p>theme.xml(主题信息，必须存在)</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3	id="theme.xml主要内容(Json格式)">theme.xml主要内容(Json格式)</h3/>
+<p>{</p>
+<pre><code> &quot;id&quot;:&quot;2&quot;,&nbsp;&nbsp;//主题id，不能为0<br/> &quot;author&quot;:&quot;祈无&quot;,&nbsp;&nbsp;&nbsp;&nbsp;//作者名字<br/> &quot;name&quot;:&quot;谷歌蓝 &quot;,&nbsp;&nbsp;&nbsp;&nbsp;//主题名字<br/> &quot;version&quot;:&quot;3&quot;,&nbsp;&nbsp;&nbsp;&nbsp;//主题版本(用户)<br/> &quot;versionCode&quot;:&quot;4&quot;,&nbsp;&nbsp;&nbsp;&nbsp;//主题版本(模块)<br/> &quot;QQVersion&quot;:&quot;8.2.0,8.1.5&quot;,&nbsp;&nbsp; //适配QQ版本，如有多个用,分割<br/> &quot;description&quot;:&quot;修改整体配色为谷歌蓝&quot;&nbsp;&nbsp;&nbsp;&nbsp;//主题描述</code></pre>
+<p>}</p>
+<p><a href="https://pan.baidu.com/s/1RRwqDNjwJ5uLL4qLUl4V0g">点击下载示例主题</a></p>
+<p>提取码:0t3l</p>
+
+</body>
+</html>

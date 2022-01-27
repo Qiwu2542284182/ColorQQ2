@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.qiwu.colorqq">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:name=".activity.BaseApplication"
+        android:icon="@drawable/ic_color"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.2" />
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="美化QQ" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="54" />
+        <activity android:name=".activity.MainSettingActivity"/>
+        <activity android:name=".activity.AboutActivity"/>
+        <activity android:name=".activity.ModuleSettingActivity"
+            android:theme="@style/module"/>
+        <activity android:name=".activity.ThemeSettingActivity"
+            android:theme="@style/theme"/>
+        <activity android:name=".activity.FabSettingActivity"
+            android:theme="@style/fab"/>
+        <activity android:name=".activity.ChatSettingActivity"
+            android:theme="@style/chat"/>
+        <activity android:name=".activity.TopSettingActivity"
+            android:theme="@style/top"/>
+        <activity android:name=".activity.TabSettingActivity"
+            android:theme="@style/tab"/>
+        <activity android:name=".activity.SvgPicSelectActivity"/>
+        <activity android:name=".activity.FabMenuSettingActivity"/>
+        <activity android:name=".activity.FabButtonSettingActivity"/>
+        <activity android:name=".activity.ItemOrderActivity"/>
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="de.robv.android.xposed.category.MODULE_SETTINGS" />
+            </intent-filter>
+        </activity>
+        <activity-alias
+            android:name=".activity.SplashActivityAlias"
+            android:enabled="true"
+            android:label="@string/app_name"
+            android:targetActivity=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity android:name=".activity.DefaultThemeSettingActivity"
+            android:theme="@style/theme"/>
+        <activity android:name=".activity.CrashActivity" />
+        <activity android:name=".activity.ThemeMainActivity"
+            android:theme="@style/theme"/>
+        <activity android:name=".activity.FileSelectActivity" />
+        <activity android:name=".activity.EditViewDiySettingActivity" />
+        <activity android:name=".library.NineGridView.NineGridImagePreviewActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".activity.ThemePreviewActivity" />
+        <activity android:name=".activity.ThemeSelectActivity" />
+        <activity android:name=".activity.ThemeIconAndColorSettingActivity" />
+        <activity android:name=".activity.PhotoPickActivity"/>
+    </application>
+
+</manifest>

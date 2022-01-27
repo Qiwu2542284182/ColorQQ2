@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/base_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <me.qiwu.colorqq.widget.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        app:is_show_tip="false"
+        app:is_show_exit="true"
+        app:title_text="@string/module_setting"/>
+    <me.qiwu.colorqq.widget.FlexLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <me.qiwu.colorqq.widget.HeaderPreference
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:header_color="?attr/colorAccent"
+                    app:header="@string/module_base_setting"/>
+                <me.qiwu.colorqq.widget.SwitchPreference
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:summary="@string/module_stop_tips"
+                    app:title="@string/module_stop"
+                    app:switch_color="?attr/colorAccent"
+                    app:key="module_stophook"/>
+                <me.qiwu.colorqq.widget.SwitchPreference
+                    android:id="@+id/module_hide_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:summary="@string/module_hide_app_tips"
+                    app:switch_color="?attr/colorAccent"
+                    app:title="@string/module_hide_app"
+                    app:key="module_hideApp"/>
+                <me.qiwu.colorqq.widget.SwitchPreference
+                    android:id="@+id/module_hide_close_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:switch_color="?attr/colorAccent"
+                    app:title="隐藏模块主界面关闭QQ按钮"
+                    app:key="module_hide_close_qq"/>
+
+                <me.qiwu.colorqq.widget.HeaderPreference
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:header_color="?attr/colorAccent"
+                    app:header="其他"/>
+                <me.qiwu.colorqq.widget.ArrowItem
+                    app:arrow_title="重置资源文件"
+                    android:onClick="resetRes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <me.qiwu.colorqq.widget.ArrowItem
+                    app:arrow_title="导入设置文件"
+                    android:onClick="leadSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:arrow_summary="设置文件会自动备份在：内存卡/QQColor2/setting.xml&#x000A;你可以把这个文件备份，需要的时候从这里导入。"/>
+                <me.qiwu.colorqq.widget.ArrowItem
+                    app:arrow_title="关于模块"
+                    android:onClick="jumpToAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </me.qiwu.colorqq.widget.FlexLayout>
+
+</LinearLayout>

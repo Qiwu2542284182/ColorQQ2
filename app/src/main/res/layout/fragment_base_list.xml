@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.qiwu.colorqq.widget.FlexLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/fragment_list"
+        android:fastScrollEnabled="true"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:dividerHeight="1px"
+        android:divider="#44aaaaaa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</me.qiwu.colorqq.widget.FlexLayout>
